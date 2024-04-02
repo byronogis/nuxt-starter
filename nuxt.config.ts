@@ -37,11 +37,20 @@ export default defineNuxtConfig({
     port: 3000,
   },
   devtools: { enabled: true },
+  /**
+   * @see https://eslint.nuxt.com/packages/module#custom-config-presets
+   */
+  eslint: {
+    config: {
+      standalone: false
+    }
+  },
   experimental: {
     viewTransition: true,
   },
   modules: [
     '@unocss/nuxt',
+    '@nuxt/eslint',
   ],
   /**
    * By default, Nuxt comes with the following plugins already pre-configured:

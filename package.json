@@ -1,12 +1,14 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -15,8 +17,13 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.11.6",
+    "@nuxt/eslint": "0.3.0-beta.7",
+    "@unocss/eslint-config": "0.59.0-beta.1",
     "@unocss/nuxt": "0.59.0-beta.1",
     "@unocss/reset": "0.59.0-beta.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0",
     "unocss": "0.59.0-beta.1"
   }
 }
