@@ -3,8 +3,9 @@
  * @see https://nuxt.com/docs/getting-started/transitions#view-transitions-api-experimental
  */
 export default defineNuxtRouteMiddleware((to) => {
-  if (import.meta.server || !document.startViewTransition)
+  if (import.meta.server || !document.startViewTransition) {
     return
+  }
 
   // Disable built-in Vue transitions
   to.meta.pageTransition = false
