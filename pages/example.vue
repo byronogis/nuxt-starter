@@ -2,7 +2,6 @@
 definePageMeta({
   layout: 'example',
 })
-
 </script>
 
 <template>
