@@ -36,6 +36,9 @@ export default defineNuxtConfig({
     port: 3000,
   },
   devtools: { enabled: true },
+  experimental: {
+    viewTransition: true,
+  },
   /**
    * By default, Nuxt comes with the following plugins already pre-configured:
    * postcss-import: Improves the @import rule
