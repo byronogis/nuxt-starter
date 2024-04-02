@@ -4,9 +4,9 @@ export default defineNuxtConfig({
     baseURL: '/',
     head: {
       meta: [
-        { "charset": "utf-8" },
+        { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0' },
-        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' },
+        { 'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge,chrome=1' },
         { name: 'renderer', content: 'webkit' },
       ],
       link: [
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   ],
   debug: false,
   devServer: {
-    host: [ 'localhost' ],
+    host: ['localhost'],
     port: 3000,
   },
   devtools: { enabled: true },
@@ -42,8 +42,8 @@ export default defineNuxtConfig({
    */
   eslint: {
     config: {
-      standalone: false
-    }
+      standalone: false,
+    },
   },
   experimental: {
     viewTransition: true,
