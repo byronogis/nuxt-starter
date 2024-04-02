@@ -5,8 +5,8 @@ import withNuxt from './.nuxt/eslint.config.mjs'
 export default withNuxt(
   antfu(
     {
-      unocss: true,
-      formatters: true,
+      unocss: true, // dep: @unocss/eslint-config
+      formatters: true, // dep: eslint-plugin-format
     },
   ),
 )
