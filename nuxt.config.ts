@@ -28,6 +28,7 @@ export default defineNuxtConfig({
    * @see https://nuxt.com/docs/getting-started/styling#the-css-property
    */
   css: [
+    '@unocss/reset/tailwind-compat.css',
     '~/assets/styles/transition.css',
   ],
   debug: false,
@@ -39,6 +40,9 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
   },
+  modules: [
+    '@unocss/nuxt',
+  ],
   /**
    * By default, Nuxt comes with the following plugins already pre-configured:
    * postcss-import: Improves the @import rule
