@@ -7,8 +7,11 @@ definePageMeta({
 <template>
   <div>
     <span>example page</span>
-    <p>{{ useCounter() }}</p>
+    <br>
     <Example />
+    <br>
+
+    <NuxtPage />
   </div>
 </template>
 
