@@ -50,6 +50,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@unocss/nuxt',
+    '@vueuse/nuxt',
     '@nuxt/eslint',
   ],
   /**
