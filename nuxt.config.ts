@@ -29,6 +29,7 @@ export default defineNuxtConfig({
    */
   css: [
     '@unocss/reset/tailwind-compat.css',
+    '~/assets/styles/base.css',
     '~/assets/styles/transition.css',
   ],
   debug: false,
