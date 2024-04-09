@@ -63,6 +63,10 @@ export default defineNuxtConfig({
    * cssnano: Minification and purge
    * @see https://nuxt.com/docs/getting-started/styling#using-postcss
    */
-  postcss: {},
+  postcss: {
+    plugins: {
+      'postcss-nested': {},
+    },
+  },
   ssr: false,
 })

@@ -67,6 +67,9 @@ devDependencies:
   naive-ui:
     specifier: ^2.38.1
     version: 2.38.1(vue@3.4.21)
+  postcss-nested:
+    specifier: ^6.0.1
+    version: 6.0.1(postcss@8.4.38)
   simple-git-hooks:
     specifier: ^2.11.1
     version: 2.11.1
@@ -7406,6 +7409,16 @@ packages:
     dependencies:
       postcss: 8.4.38
       postcss-selector-parser: 6.0.16
+
+  /postcss-nested@6.0.1(postcss@8.4.38):
+    resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.2.14
+    dependencies:
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
+    dev: true
 
   /postcss-normalize-charset@6.0.2(postcss@8.4.38):
     resolution: {integrity: sha512-a8N9czmdnrjPHa3DeFlwqst5eaL5W8jYu3EBbTTkI5FHkfMhFZh1EGbku6jhHhIzTA6tquI2P42NtZ59M/H/kQ==}
