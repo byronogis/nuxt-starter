@@ -19,15 +19,15 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.13.2",
-    "@bg-dev/nuxt-naiveui": "1.12.0-edge",
+    "@bg-dev/nuxt-naiveui": "^1.12.3",
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@commitlint/cz-commitlint": "^19.2.0",
     "@commitlint/types": "^19.0.3",
-    "@nuxt/eslint": "0.3.0-beta.7",
-    "@unocss/eslint-config": "0.59.0-beta.1",
-    "@unocss/nuxt": "0.59.0-beta.1",
-    "@unocss/reset": "0.59.0-beta.1",
+    "@nuxt/eslint": "^0.3.4",
+    "@unocss/eslint-config": "^0.59.0",
+    "@unocss/nuxt": "^0.59.0",
+    "@unocss/reset": "^0.59.0",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
     "commitizen": "^4.3.0",
@@ -39,7 +39,7 @@
     "postcss-nested": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.4.4",
-    "unocss": "0.59.0-beta.1"
+    "unocss": "^0.59.0"
   },
   "config": {
     "commitizen": {
