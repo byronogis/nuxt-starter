@@ -48,6 +48,7 @@ export default defineNuxtConfig({
   },
   experimental: {
     viewTransition: true,
+    typedPages: true, // will generate types for pages (~/.nuxt/types/typed-router.d.ts)
   },
   modules: [
     '@unocss/nuxt',
