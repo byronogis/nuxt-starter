@@ -1,8 +1,7 @@
 export function useTheme() {
-  const { colorModePreference } = useNaiveColorMode()
-
+  // TODO theme feature
   return {
-    get: colorModePreference.get,
-    set: colorModePreference.set,
+    get: () => {},
+    set: () => {},
   }
 }
