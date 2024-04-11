@@ -4,8 +4,6 @@ const appConfig = useAppConfig()
 function log() {
   console.log(appConfig)
 }
-
-const theme = useTheme()
 </script>
 
 <template>
@@ -36,13 +34,13 @@ const theme = useTheme()
 
     <n-card>
       <n-space>
-        <n-button @click="theme.set('dark')">
+        <n-button @click="$colorMode.preference = 'dark'">
           深色
         </n-button>
-        <n-button @click="theme.set('light')">
+        <n-button @click="$colorMode.preference = 'light'">
           浅色
         </n-button>
-        <n-button @click="theme.set('system')">
+        <n-button @click="$colorMode.preference = 'system'">
           系统
         </n-button>
       </n-space>

@@ -1,13 +1,9 @@
 <template>
-  <n-config-provider
-    preflight-style-disabled
-  >
+  <BaseConfigProvider>
     <NuxtLayout>
       <RouterNav />
 
       <NuxtPage />
     </NuxtLayout>
-
-    <n-global-style />
-  </n-config-provider>
+  </BaseConfigProvider>
 </template>

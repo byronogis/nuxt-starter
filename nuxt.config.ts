@@ -24,6 +24,11 @@ export default defineNuxtConfig({
     foo: 'bar',
   },
   /**
+   * Configuration for the `@nuxtjs/color-mode` module.
+   * @see https://color-mode.nuxtjs.org/#configuration
+   */
+  colorMode: { },
+  /**
    * Nuxt will include it to all the pages of your application.
    * @see https://nuxt.com/docs/getting-started/styling#the-css-property
    */
@@ -54,6 +59,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/eslint',
+    '@nuxtjs/color-mode',
   ],
   /**
    * By default, Nuxt comes with the following plugins already pre-configured:
