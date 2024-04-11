@@ -1,5 +1,5 @@
 <template>
-  <naive-config
+  <n-config-provider
     preflight-style-disabled
   >
     <NuxtLayout>
@@ -9,5 +9,5 @@
     </NuxtLayout>
 
     <n-global-style />
-  </naive-config>
+  </n-config-provider>
 </template>

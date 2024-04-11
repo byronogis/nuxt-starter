@@ -54,7 +54,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/eslint',
-    '@bg-dev/nuxt-naiveui',
   ],
   /**
    * By default, Nuxt comes with the following plugins already pre-configured:

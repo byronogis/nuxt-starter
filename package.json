@@ -14,12 +14,12 @@
     "postinstall": "nuxt prepare && npx simple-git-hooks"
   },
   "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-nightly@latest",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.13.2",
-    "@bg-dev/nuxt-naiveui": "^1.12.3",
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@commitlint/cz-commitlint": "^19.2.0",

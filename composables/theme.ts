@@ -1,8 +1,13 @@
 export function useTheme() {
-  const { colorModePreference } = useNaiveColorMode()
+  // const { colorModePreference } = useNaiveColorMode()
+
+  // return {
+  //   get: (colorModePreference.get),
+  //   set: colorModePreference.set,
+  // }
 
   return {
-    get: colorModePreference.get,
-    set: colorModePreference.set,
+    get: () => {},
+    set: () => {},
   }
 }
