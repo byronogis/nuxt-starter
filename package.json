@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.8",
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -50,7 +50,7 @@
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint -e",
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
