@@ -46,7 +46,7 @@ import type {
   MaybeComputedElementRef,
 } from '@vueuse/core'
 
-// 通过 ComposeOption 来组合出一个只有必须组件和图表的 Option 类型
+// 通过 ComposeOption 来组合出一个只含有必要组件和图表的 Option 类型
 export type ChartOption = ComposeOption<
   | BarSeriesOption
   | TitleComponentOption
