@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@8.15.8",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -16,32 +16,32 @@
   "dependencies": {
     "@nuxt/kit": "npm:@nuxt/kit-nightly@latest",
     "echarts": "^5.5.0",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue": "^3.4.26",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.13.2",
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@antfu/eslint-config": "^2.16.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/cz-commitlint": "^19.2.0",
     "@commitlint/types": "^19.0.3",
-    "@nuxt/eslint": "^0.3.4",
-    "@nuxtjs/color-mode": "^3.3.3",
-    "@unocss/eslint-config": "^0.59.0",
-    "@unocss/nuxt": "^0.59.0",
-    "@unocss/reset": "^0.59.0",
+    "@nuxt/eslint": "^0.3.10",
+    "@nuxtjs/color-mode": "^3.4.1",
+    "@unocss/eslint-config": "^0.59.4",
+    "@unocss/nuxt": "^0.59.4",
+    "@unocss/reset": "^0.59.4",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
     "commitizen": "^4.3.0",
-    "eslint": "^9.0.0",
-    "eslint-plugin-format": "^0.1.0",
+    "eslint": "^9.1.1",
+    "eslint-plugin-format": "^0.1.1",
     "lint-staged": "^15.2.2",
     "naive-ui": "^2.38.1",
     "nuxt": "^3.11.2",
     "postcss-nested": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.4.4",
-    "unocss": "^0.59.0"
+    "typescript": "^5.4.5",
+    "unocss": "^0.59.4"
   },
   "config": {
     "commitizen": {
