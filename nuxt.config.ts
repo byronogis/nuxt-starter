@@ -60,7 +60,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
+    'nuxtjs-naive-ui',
   ],
+  nitro: { prerender: { failOnError: false } },
   /**
    * By default, Nuxt comes with the following plugins already pre-configured:
    * postcss-import: Improves the @import rule
@@ -74,5 +76,5 @@ export default defineNuxtConfig({
       'postcss-nested': {},
     },
   },
-  ssr: false,
+  ssr: !false,
 })
