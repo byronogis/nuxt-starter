@@ -45,6 +45,13 @@
     "typescript": "^5.4.5",
     "unocss": "^0.60.0"
   },
+  "pnpm": {
+    "overrides": {
+      "@css-render/plugin-bem": "^0.15.14",
+      "@css-render/vue3-ssr": "^0.15.14",
+      "css-render": "^0.15.14"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
