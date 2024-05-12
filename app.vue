@@ -1,9 +1,9 @@
 <template>
-  <BaseConfigProvider>
+  <BaseProvider>
     <NuxtLayout>
       <RouterNav />
 
       <NuxtPage />
     </NuxtLayout>
-  </BaseConfigProvider>
+  </BaseProvider>
 </template>
