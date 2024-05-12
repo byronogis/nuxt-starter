@@ -20,15 +20,16 @@ const darkThemeOverrides: GlobalThemeOverrides = {
   // ...
 }
 
-const theme = computed(() => useColorMode().value)
+const colorMode = useColorMode()
+const isDark = computed(() => colorMode.value === 'dark')
 </script>
 
 <template>
   <n-config-provider
-    preflight-style-disabled
-    inline-theme-disabled
-    :theme="theme === 'dark' ? darkTheme : undefined"
-    :theme-overrides="theme === 'dark' ? darkThemeOverrides : lightThemeOverrides"
+
+    inline-theme-disabled preflight-style-disabled
+    :theme="isDark ? darkTheme : undefined"
+    :theme-overrides="isDark ? darkThemeOverrides : lightThemeOverrides"
   >
     <slot />
 
