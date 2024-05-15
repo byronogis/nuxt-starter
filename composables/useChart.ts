@@ -87,9 +87,6 @@ export function useChart(
   } = options || {}
 
   const chartInstance = ref<EChartsType | null>(null)
-  const cachedChartOption = ref<ChartOption>()
-
-  toValue(chartOption) && (cachedChartOption.value = toValue(chartOption))
 
   function initChart() {
     const el = unrefElement(target)
@@ -109,24 +106,18 @@ export function useChart(
         : null
   }
 
-  function setOptions(
-    chartOption = cachedChartOption,
-    { cache } = { cache: true }, /* clear = true */
-  ) {
+  function setOptions() {
     const option = toValue(chartOption)
     if (!option) {
       return
     }
 
-    // TODO deep clone ?
-    cache && (cachedChartOption.value = option)
-
     const instance = getInstance()
     instance?.setOption(option)
   }
 
-  watch([target, cachedChartOption], () => {
-    target && setOptions(cachedChartOption, { cache: false })
+  watch([target, chartOption], () => {
+    toValue(target) && setOptions()
   }, { immediate: true, deep: true })
 
   useResizeObserver(target, () => {
@@ -140,7 +131,6 @@ export function useChart(
 
   return {
     echarts,
-    setOptions,
     getInstance,
   }
 }
