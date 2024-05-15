@@ -22,7 +22,10 @@ import {
 } from 'echarts/features'
 
 // 引入 Canvas 渲染器，注意引入 CanvasRenderer 或者 SVGRenderer 是必须的一步
-import { CanvasRenderer } from 'echarts/renderers'
+import {
+  CanvasRenderer,
+  // SVGRenderer,
+} from 'echarts/renderers'
 
 // 系列类型的定义后缀都为 SeriesOption
 import type {
@@ -39,6 +42,7 @@ import type {
 
 import type {
   ComposeOption,
+  EChartsInitOpts,
   EChartsType,
 } from 'echarts/core'
 
@@ -61,6 +65,16 @@ export interface UseChartOptions {
    * @see https://echarts.apache.org/zh/option.html
    */
   chartOption?: MaybeRef<ChartOption>
+  /**
+   * 初始化配置
+   * @see https://echarts.apache.org/zh/api.html#echarts.init
+   */
+  initOptions?: EChartsInitOpts
+  /**
+   * 主题
+   * @see https://echarts.apache.org/zh/api.html#echarts.init
+   */
+  theme?: string | object
 }
 
 echarts.use([
@@ -76,6 +90,7 @@ echarts.use([
   UniversalTransition,
 
   CanvasRenderer,
+  // SVGRenderer,
 ])
 
 export function useChart(
@@ -84,6 +99,8 @@ export function useChart(
 ) {
   const {
     chartOption,
+    initOptions,
+    theme,
   } = options || {}
 
   const chartInstance = ref<EChartsType | null>(null)
@@ -94,7 +111,11 @@ export function useChart(
       return
     }
 
-    chartInstance.value = markRaw(echarts.init(el))
+    chartInstance.value = markRaw(echarts.init(
+      el,
+      theme,
+      initOptions,
+    ))
     return chartInstance.value
   }
 
