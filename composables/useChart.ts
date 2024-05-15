@@ -98,10 +98,21 @@ export function useChart(
   options?: UseChartOptions | null,
 ) {
   const {
-    chartOption,
-    initOptions,
     theme,
   } = options || {}
+
+  const initOptions = defu(options?.initOptions, {
+    // renderer: 'svg',
+  })
+
+  const chartOption = computed(() => defu(toValue(options?.chartOption), {
+    grid: {
+      left: '10%',
+      right: '10%',
+      bottom: '10%',
+      top: '10%',
+    },
+  }))
 
   const chartInstance = ref<EChartsType | null>(null)
 
