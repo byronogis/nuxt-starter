@@ -56,7 +56,11 @@ export type ChartOption = ComposeOption<
 >
 
 export interface UseChartOptions {
-  //
+  /**
+   * 图表配置
+   * @see https://echarts.apache.org/zh/option.html
+   */
+  chartOption?: MaybeRef<ChartOption>
 }
 
 echarts.use([
@@ -77,8 +81,11 @@ echarts.use([
 export function useChart(
   target: MaybeComputedElementRef<HTMLElement | null | undefined>,
   options?: UseChartOptions | null,
-  chartOption?: MaybeRef<ChartOption>,
 ) {
+  const {
+    chartOption,
+  } = options || {}
+
   const chartInstance = ref<EChartsType | null>(null)
   const cachedChartOption = ref<ChartOption>()
 

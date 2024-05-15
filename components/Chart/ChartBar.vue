@@ -10,7 +10,7 @@ const options = computed(() => ({
   ...props.options,
 }))
 
-useChart(chartRef, null, options)
+useChart(chartRef, { chartOption: options })
 // or
 // const chart = useChart(chartRef)
 // chart.setOptions(options)
